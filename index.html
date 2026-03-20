@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Frank Armand | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<nav class="sticky-nav">
+    <h2 class="logo"><span>FRA</span>NK.</h2>
+    <ul id="sidemenu">
+        <li><a href="#header" onclick="closemenu()">Home</a></li>
+        <li><a href="#about" onclick="closemenu()">About</a></li>
+        <li><a href="#services" onclick="closemenu()">Services</a></li>
+        <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+        <li><a href="#Contact" onclick="closemenu()">Contact</a></li>
+        <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+    </ul>
+    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+</nav>
+
+<section id="header" class="hero">
+    <div class="hero-content">
+        <h1>Hi I'm <span>Frank</span></h1>
+        <h3>a Prompter & Creative Dev</h3>
+    </div>
+</section>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="me.jpg" alt="Frank Armand profile">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>Hi, I’m Frank, a BS Information Technology student who approaches every project with hard work, critical thinking, and a passion for solving real-world problems. I thrive both independently and as an active member of the school community, constantly seeking opportunities to grow. While my strengths lie in analyzing systems and writing clean code, I’ve also developed a strong eye for design - bringing ideas to life through Figma prototypes and responsive web development. My portfolio reflects the intersection of technical depth and thoughtful user experience, and I’m excited to keep building solutions that make a difference.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opantab('skills', event)">SKILLS</p>
+                    <p class="tab-links" onclick="opantab('experience', event)">EXPERIENCE</p>
+                    <p class="tab-links" onclick="opantab('education', event)">EDUCATION</p>
+                </div>
+                
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span> Creative Tech Skills</span><br>Wireframing & Prototyping (Figma) • Prompting • Photography • Photo & Video Editing • Web Development (HTML/CSS/JS)</li>
+                    </ul>
+                </div>        
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span> Hands-on Experience</span><br>Applying Self discipline to creative work • Delivering artistic designs • Photography and web projects • Exploring hobbies for creativity • Tackling challenges with focus</li>
+                    </ul> 
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span> Academic Background</span><br>ELEMENTARY: Pandaraonan Elementary School <br>HIGHSCHOOL: Simeon J. Jabasa NHS - GAS Strand<br>COLLEGE: 3rd Year - Guimaras State University, BS Information Technology</li>
+                    </ul>
+                </div>                 
+            </div>    
+        </div>
+    </div> 
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="service-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Creative Design Solutions</h2>
+                <p>I specialize in wireframing, prototyping, and visual design, leveraging tools like Figma to craft user-friendly and captivating designs. By combining artistic vision with technical precision, I create meaningful and functional user experiences that align with modern standards and client goals.</p>
+                <a href="#">Learn more →</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-photo-film"></i>
+                <h2>Photography & Multimedia</h2>
+                <p>From capturing striking moments to producing high-quality photo and video content, I excel in delivering compelling visuals. My expertise in photography and editing allows me to create vibrant and impactful imagery tailored for personal, social, or commercial purposes.</p>
+                <a href="#">Learn more →</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Sapatos.jpeg" alt="Shoe app design">
+                <div class="layer">
+                    <h3>Shoe App Design</h3>
+                    <p>Designed with returning shoppers in mind — blends purchase history, favorite brands, and one‑tap login into a clutter‑free screen. Zero friction, smart layout.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>                  
+                </div>
+            </div>
+            <div class="work">
+                <img src="Med.jpeg" alt="Pharmacy app">
+                <div class="layer">
+                    <h3>Pharmacy App</h3>
+                    <p>Your essentials, just a tap away. Clean sign‑in, organized categories: medicines, baby care, skin solutions & vitamins. Browse and add to cart seamlessly.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>                   
+                </div>
+            </div>
+            <div class="work">
+                <img src="portfolio.jpg" alt="Web Portfolio">
+                <div class="layer">
+                   <h3>Web Portfolio</h3>
+                   <p>Where code meets creativity, and design tells a story. I’m Frank Armand - a BS Information Technology student with a passion for crafting intuitive digital experiences, stunning visuals, and meaningful interactions. From Figma wireframes and responsive websites to photography and multimedia editing, my portfolio is a showcase of curiosity turned into craft. Dive in and see how I blend technical precision with artistic vision, one project at a time.</p>
+                   <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+         </div>
+         <div style="text-align: center;">
+            <a href="#" class="btn2">See more projects</a>
+         </div>
+    </div>
+</div>
+
+<div id="Contact">
+    <div class="container">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> tanaleonfrank@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 09514369302</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1DtiukrDnR/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/franktanaleon?igsh=aGNodGE0YnJzaXRh" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://t.me/frnkks" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="mailto: tanaleonfrank@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© Frank Armand 2026. All rights reserved. Built with passion.</p>
+    </div>
+</div>
+
+<script>
+    // Tab functionality
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opantab(tabname, event) {
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    // Mobile menu
+    let sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        if (window.innerWidth <= 640) {
+            sidemenu.style.right = "0";
+        }
+    }
+
+    function closemenu() {
+        if (window.innerWidth <= 640) {
+            sidemenu.style.right = "-280px";
+        }
+    }
+
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 640) {
+            sidemenu.style.right = "";
+        } else {
+            sidemenu.style.right = "-280px";
+        }
+    });
+
+    if (window.innerWidth <= 640) {
+        sidemenu.style.right = "-280px";
+    }
+</script>
+</body>
+</html>
