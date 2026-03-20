@@ -20,13 +20,12 @@ body {
     width: 100%;
     background: linear-gradient(145deg, rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('Background.png');
     background-size: cover;
-    background-position: center center;
+    background-position: center 30%;   /* adjusts vertical focus – tweak this value */
     background-repeat: no-repeat;
     position: relative;
     display: flex;
     flex-direction: column;
 }
-
 nav {
     display: flex;
     align-items: center;
